@@ -2,13 +2,13 @@ import java.util.Arrays;
 
 public class PercolationUF implements IPercolate {
 
-	protected boolean[][] myGrid;
-	protected int myOpenCount;
+	private boolean[][] myGrid;
+	private int myOpenCount;
 	
 	IUnionFind myFinder = new QuickUWPC();
 	
-	protected int VTOP;
-	protected int VBOTTOM;
+	private int VTOP;
+	private int VBOTTOM;
 	
 	
 	/**
@@ -23,6 +23,18 @@ public class PercolationUF implements IPercolate {
 	 * 				this object in the appropriate instance variable.  
 
 	 */
+	public PercolationUF(int n, IUnionFind finder) {
+		myGrid = new boolean[n][n];
+		myOpenCount = 0;
+		for (boolean[] row : myGrid)
+			Arrays.fill(row, false);
+		
+		myFinder = finder;
+		myFinder.initialize(n*n + 2);
+		VTOP = n*n;	
+		VBOTTOM = n*n + 1;
+	}
+	
 	public PercolationUF(IUnionFind finder, int n) {
 		myGrid = new boolean[n][n];
 		myOpenCount = 0;
