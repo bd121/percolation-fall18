@@ -3,11 +3,6 @@ bd121
 
 Copy/Paste results from PercolationStats using PercolationDFS
 simulation data for 20 trials
-grid	mean	stddev	time
-100		0.593	0.014	2.444
-200		0.591	0.010	31.960
-400		0.590	0.006	854.888
-800		0.594	0.004	14500.939
 
 simulation data for 20 trials
 grid	mean	stddev	time
@@ -15,31 +10,46 @@ grid	mean	stddev	time
 200		0.591	0.010	24.452
 400		0.590	0.006	320.340
 800		0.594	0.004	7788.296
-Exception in thread "main" java.lang.StackOverflowError
-	at PercolationDFS.dfs(PercolationDFS.java:109)
-	at PercolationDFS.dfs(PercolationDFS.java:110)
-	at PercolationDFS.dfs(PercolationDFS.java:109)
-	at PercolationDFS.dfs(PercolationDFS.java:110)
-	
+Exception in thread "main" java.lang.StackOverflowError	
+
+simulation data for 40 trials
+grid	mean	stddev	time
+100	0.594	0.015	4.719
+200	0.591	0.009	57.366
+400	0.591	0.005	852.321
+
+simulation data for 80 trials
+grid	mean	stddev	time
+100	0.595	0.016	8.794
+200	0.592	0.009	100.153
+400	0.592	0.006	1331.487
 	
 Copy/Paste results from PercolationStats using PercolationDFSFast
-simulation data for 20 trials
-grid	mean	stddev	time
-100		0.593	0.014	0.748
-200		0.591	0.010	0.271
-400		0.590	0.006	2.378
-800		0.594	0.004	12.410
 
 simulation data for 20 trials
 grid	mean	stddev	time
-100		0.593	0.014	0.686
-200		0.591	0.010	0.296
-400		0.590	0.006	2.246
-800		0.594	0.004	12.051
+100	0.593	0.014	0.171
+200	0.591	0.010	0.228
+400	0.590	0.006	1.757
+800	0.594	0.004	11.485
 Exception in thread "main" java.lang.StackOverflowError
 	at PercolationDFS.dfs(PercolationDFS.java:109)
-	at PercolationDFS.dfs(PercolationDFS.java:109)
-	at PercolationDFS.dfs(PercolationDFS.java:111)
+
+simulation data for 40 trials
+grid	mean	stddev	time
+100	0.594	0.015	0.219
+200	0.591	0.009	0.359
+400	0.591	0.005	3.366
+800	0.593	0.004	21.519
+Exception in thread "main" java.lang.StackOverflowError
+
+simulation data for 80 trials
+grid	mean	stddev	time
+100	0.595	0.016	0.292
+200	0.592	0.009	0.682
+400	0.592	0.006	6.859
+800	0.593	0.004	41.615
+Exception in thread "main" java.lang.StackOverflowError
 
 simulation data for 20 trials
 grid	mean	stddev	time
@@ -59,41 +69,123 @@ Exception in thread "main" java.lang.StackOverflowError
 Copy/Paste results from PercolationStats using PercolationBFS
 simulation data for 20 trials
 grid	mean	stddev	time
-100		0.593	0.014	0.297
-200		0.591	0.010	0.371
-400		0.590	0.006	1.976
-800		0.594	0.004	12.023
+100	0.593	0.014	0.297
+200	0.591	0.010	0.371
+400	0.590	0.006	1.976
+800	0.594	0.004	12.023
 1600	0.592	0.002	67.692
 3200	0.593	0.001	504.575
 
-simulation data for 20 trials
+
+simulation data for 40 trials
 grid	mean	stddev	time
-100		0.593	0.014	0.226
-200		0.591	0.010	0.499
-400		0.590	0.006	3.394
-800		0.594	0.004	22.731
-1600	0.592	0.002	117.360
-3200	0.593	0.001	684.406
+100	0.594	0.015	0.290
+200	0.591	0.009	0.431
+400	0.591	0.005	3.581
+800	0.593	0.004	22.936
+1600	0.593	0.002	123.886
+3200	0.593	0.001	938.283
+
+simulation data for 80 trials
+grid	mean	stddev	time
+100	0.595	0.016	0.374
+200	0.592	0.009	0.805
+400	0.592	0.006	7.406
+800	0.593	0.004	45.675
+1600	0.592	0.002	253.727
+3200	0.593	0.001	1877.347
+
 
 
 Copy/Paste results from PercolationStats using PercolationUF 
 with the QuickUWPC UnionFind implementation.
 simulation data for 20 trials
 grid	mean	stddev	time
-100		0.593	0.014	0.123
-200		0.591	0.010	0.267
-400		0.590	0.006	1.606
-800		0.594	0.004	9.327
+100	0.593	0.014	0.123
+200	0.591	0.010	0.267
+400	0.590	0.006	1.606
+800	0.594	0.004	9.327
 1600	0.592	0.002	43.362
 3200	0.593	0.001	348.857
 
+simulation data for 40 trials
+grid	mean	stddev	time
+100	0.594	0.015	0.203
+200	0.591	0.009	0.525
+400	0.591	0.005	3.282
+800	0.593	0.004	20.203
+1600	0.593	0.002	92.611
+3200	0.593	0.001	568.980
+
+simulation data for 80 trials
+grid	mean	stddev	time
+100	0.595	0.016	0.303
+200	0.592	0.009	0.704
+400	0.592	0.006	6.348
+800	0.593	0.004	34.902
+1600	0.592	0.002	170.729
+3200	0.593	0.001	975.140
 
 1. How does doubling the grid size affect running time (keeping # trials fixed)
 
-In general, doubling the grid size increases the runtime (though there is an exception going from grid size 100
-to 200 for DFSFast). For both PercolationBFS and PercolationUF, doubling grid size leads runtime to increase about 6x.
+1). using PercolationDFS to simulate
+	
+	For each trial:
+	
+	a.  call get RandomSites()   --> O(n^2)
+	b.  while loop call PercolationDFS->percolates() 
+		---> O(n *  --> open() 
+				--> updateOnOpen --> O(n* 
+				   -->PercolationDFS->dfs() -> (4^0 + 4^1 + 4^2 + ... + 4^(n-1))
+					==> O((4^n-1)/(4-1)))
+		        
+	O(n^2 + n^2*4^n)))
+	
+	about 10 times ~ 20 times
+	
+2). using PercolationDFSFast to simulate
+	
+	For each trial:
+	
+	a.  call get RandomSites()   --> O(n^2)
+	b.  while loop call PercolationDFS->percolates() 
+		---> O(n *  --> open()
+		--> updateOnOpen --> O(1* 
+		   --> PercolationDFS->dfs() -> (4^0 + 4^1 + 4^2 + ... + 4^(n-1))
+		        ==> O((4^n-1)/(4-1)))
+		        
+	O(n^2 + n(4^n)))
+	
+	
+	about 2 ~ 7 times
+	
+3). using PercolationBFS to simulate
 
+	For each trial:
+	
+	a.  call get RandomSites()   --> O(n^2)
+	b.  while loop call PercolationBFS->percolates() 
+		---> O(n *  --> open()
+		--> updateOnOpen --> O(1* 
+		   --> PercolationBFS->dfs() -> n*(log n))
+		        
+	O(n^2 + n^2*log n))
+	
+	if doubling n, running time should be 4.5 ~ 6 times
+	
+4). using PercolationUF
 
+	For each trial:
+
+	a.  call get RandomSites()   --> O(n^2)
+	b.  initially set PercolationUF --> O(n^2)
+	c.  while loop call PercolationUF->percolates() 
+		---> O(log n *  --> open() --> union  + union_Adjacent
+				--> O(log n))
+
+	O(n^2 + nlog n))
+
+	if doubling n, running time should be 4 ~ 5 times
 2. How does doubling the number of trials affect running time.
 
 Doubling the number of trials about doubles the run time. 
@@ -101,8 +193,20 @@ Doubling the number of trials about doubles the run time.
 
 3. Estimate the largest grid size you can run in 24 hours with 20 trials. Explain your reasoning.
 
-PercolationUF is the fastest implementation out of the four choices. Going by its trend in grid vs. runtime, 
-max grid size which can be run in a day should be 25600. There are 24*3600, or 86400 seconds to a day. Increasing from
-3200 to 6400 should increase runtime from around 350 to around 2100 seconds. Increasing to 12800 increases runtime to 
-around 12600 seconds. Increasing to 25600 increases runtime to around 75600, which is still smaller than 86400. Doubling
-again however will take more than one day's worth of seconds, so the max grid size should be 25600.
+ a. For PercolationDFS and PercolationDFSFast, when the grid size is 1600, the system has StackOverflowError;
+ 
+ b. For using PercolationBFS to simulate:  grid size would be 8000
+ 
+ 	it has about 67.692 seconds (1 minutes) for grid size 1600;
+ 	because (4.5)^5 = 1845, 5^5 = 3125, and 24 hours = 1440 minutes,
+ 	
+ 	1600 x 5 = 8000  ==> grid size as 8000 could be run over 24 hours
+ 	
+ c. For using PercolationUF to simulate: grid size would be 8800
+ 
+ 	it has about 43 seconds (0.71 minutes) for grid size 1600;
+ 	because 4^5.5 * 0.71 = 1454, and 24 hours = 1440 minutes,
+ 	
+ 	1600 x 5.5 = 8400  ==> grid size as 8800 could be run over 24 hours
+ 	
+ 
